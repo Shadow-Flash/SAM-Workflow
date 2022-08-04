@@ -10,8 +10,8 @@ on:
       - 'feature**'
 
 env:
-  PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.AKIA57GLKGCHXI64KOUS }}
-  PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.TGbkO4zDMfkPYg+5J6wf0T4TziwJQOuxY9DvYQ0L }}
+  PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
   SAM_TEMPLATE: template.yaml
   TESTING_STACK_NAME: cbl-workflow
   TESTING_PIPELINE_EXECUTION_ROLE: arn:aws:iam::960351580303:role/aws-sam-cli-managed-dev-pipe-PipelineExecutionRole-1SXZUTFWJVAUT
